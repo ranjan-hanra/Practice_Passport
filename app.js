@@ -17,6 +17,7 @@ const User = require("./models/user.js");
 
 const userRouter = require("./routes/user.js")
 const mainRouter = require("./routes/main.js")
+const dashboardRouter = require("./routes/dashboard.js")
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/passport";
 main().then(()=>{
@@ -69,6 +70,7 @@ app.use((req,res,next)=>{
 
 app.use("/",userRouter);
 app.use("/",mainRouter);
+app.use("/",dashboardRouter);
 
 
 app.listen(8080,(req,res)=>{

@@ -15,7 +15,7 @@ router.post("/signup",wrapAsync(async(req,res)=>{
         const registeredUser = await User.register(newUser,password);
         console.log(registeredUser);
 
-        req.flash("success","Welcome to Wanderlust");
+        req.flash("success","Welcome to Practice Session of Passport-local");
 
         res.redirect("/main");
     } catch(e){
@@ -29,7 +29,7 @@ router.get("/login",(req,res)=>{
     res.render("users/login.ejs");
 });
 router.post("/login",passport.authenticate("local",{failureRedirect:'/login',failureFlash:true}),async(req,res)=>{
-    req.flash("success","Welcom back to Wanderlust!");
+    req.flash("success","Welcome Back to login portal of practice session of local-passport");
     res.redirect("/main");
 })
 
