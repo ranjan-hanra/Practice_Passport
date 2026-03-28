@@ -21,8 +21,8 @@
 
 ⚙️ Setup & Run:  
 1️⃣ Clone Repository  
-git clone https://github.com/your-username/your-repo-name.git  
-cd your-repo-name  
+git clone https://github.com/ranjan-hanra/Practice_Passport.git 
+cd Practice_Passport  
 
 2️⃣ Install Dependencies  
 npm install  
